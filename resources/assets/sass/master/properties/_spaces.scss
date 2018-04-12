@@ -1,0 +1,18 @@
+@each $nt, $type in $space-types { // margin, padding
+  @each $nd, $dir in $directions { // top, left, right, bottom
+    @each $size, $length in $sizes { // 0, 1, 2, 3, 4, 5
+      .#{$type}#{$dir}-#{$size} {#{$nt}-#{$nd}: $length}
+    };
+  };
+
+  @each $size, $length in $sizes { // 0, 1, 2, 3, 4, 5
+    .#{$type}x-#{$size} {
+      @extend .#{$type}l-#{$size};
+      @extend .#{$type}r-#{$size};
+    }
+    .#{$type}y-#{$size} {
+      @extend .#{$type}t-#{$size};
+      @extend .#{$type}b-#{$size};
+    }
+  };
+};

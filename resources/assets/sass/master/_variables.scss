@@ -1,0 +1,135 @@
+// sizes
+$size-very-x-large: 5rem;
+$size-x-large: 4rem;
+$size-large: 2.75rem;
+$size-large-small: 2rem;
+$size-base: 1.5rem;
+$size-base-small: 1.25rem;
+$size-small: 1rem;
+$size-x-small: 0.6875rem;
+$size-very-x-small: 0.5rem;
+$fullScreen: 100%;
+$halfScreen: ($fullScreen/2);
+
+$border-base: 1px;
+
+$fivePix: ($border-base*5);
+$tooPix: ($border-base*2);
+
+$padding-input-x: .375rem;
+$padding-input-y: .75rem;
+
+$line-height-base: 1.5;
+
+$sizes : (
+  0: 0,
+  1: ($size-small * .25),
+  2: ($size-small * .5),
+  3: $size-small,
+  4: ($size-small * 1.5),
+  5: ($size-small * 3),
+  auto: auto
+);
+
+$space-types: (
+  margin: m,
+  padding: p
+);
+
+$directions: (
+  top: t,
+  left: l,
+  right: r,
+  bottom: b
+);
+
+$header-size: (
+  1: $size-x-large,
+  2: $size-large,
+  3: $size-base,
+  4: $size-small,
+);
+// Display
+$display: (
+  0: none,
+  1: block,
+  2: flex,
+  3: inline,
+  4: inline-block
+);
+
+$justify-content: (
+  center: center,
+  between: space-between,
+  around: space-around,
+  start: flex-start,
+  end: flex-end
+);
+
+// Color
+$apple-green: #96BB00;
+$bittersweet: #FF715B;
+$bleue-de-france: #3C91E6;
+$ice: #FAFFFD;
+$grey: #E1E2E3;
+$feldgrau: #4C5B5C;
+$charcoal: #1C2222;
+
+$colors: (
+  apple-green: $apple-green,
+  bittersweet: $bittersweet,
+  bleue-de-france: $bleue-de-france,
+  ice: $ice,
+  grey: $grey,
+  feldgrau: $feldgrau,
+  charcoal: $charcoal,
+  transparent: transparent,
+  init: inherit
+);
+
+// icon size
+$icon-x-large: $size-x-large;
+$icon-large: $size-large;
+$icon-base: $size-base;
+$icon-small: $size-small;
+
+// Fonts
+$main-fonts: 'Roboto', sans-serif;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Times
+$second: 1s;
+$halfSecond: ($second/2);
+$quarterSecond: ($second/4);
+
+// Rotations
+$northEast: 45deg;
+$northWest: -45deg;
+$east: 90deg;
+$south: 180deg;
+
+// Text
+$text-align: (
+  1: left,
+  2: right,
+  3: center,
+  4: justify
+);
+// Other
+$plus: '\02795'; // Unicode character for "plus" sign (+)
+$minus: '\2796'; // Unicode character for "minus" sign (-)
+$none: 0;
+$one: 1;
+
+$shadow: $none $none 2px $none rgba($none,$none,$none,.12), $none 2px 2px $none rgba($none,$none,$none,.24);
+$shadow-bottom: $none 2px $fivePix rgba($none,$none,$none,.26);
+$shadow-light: $none $none $size-base-small $feldgrau;
+
+// hamburger
+$hambs: (
+  0: top,
+  1: middle,
+  2: bottom
+);

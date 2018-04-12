@@ -1,0 +1,17 @@
+.position {
+  &-fixed {position: fixed;}
+  &-absolute {position: absolute;}
+  &-top {
+    &-zero {top: $none}
+    &-alf-screen {top: $halfScreen}
+  }
+  &-right {
+    &-zero {right: $none}
+  }
+  &-bottom {
+    &-zero {bottom: $none}
+  }
+  &-left {
+    &-zero {left: $none}
+  }
+}

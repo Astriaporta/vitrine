@@ -1,0 +1,83 @@
+.hamb {
+  @each $k, $hamb in $hambs {
+    &-#{$hamb} {@include make-hamb-button($hamb);}
+  }
+}
+.hamburger {
+  top: $size-base-small;
+  width: $size-large-small;
+  height: $size-large-small;
+  margin-left: $size-small;
+  z-index: 999;
+  cursor: pointer;
+  @extend .dp-block;
+  @extend .border-none;
+  @extend .bg-transparent;
+  @extend .position-absolute;
+  &::before {
+    content: '';
+    width: 100px;
+    line-height: $size-large-small;
+    @extend .c-ice;
+    @extend .text-center;
+    @extend .opacity-none;
+    @include translate3d ($none,$none,$none);
+    @include transition-all-ease-in-out($halfSecond);
+  }
+  &:hover {@extend .outline-none;}
+  &:focus {@extend .outline-none;}
+  &:active {@extend .outline-none;}
+  //if menu is closed
+  &.is-closed {
+    &::before {
+      @extend .font-size-x-small;
+    }
+    &:hover {
+      &::before {
+        @extend .dp-block;
+        @extend .opacity-full;
+        @include translate3d (-100px,$none,$none);
+        @include transition-all-ease-in-out($halfSecond);
+      }
+      .hamb-top {
+        @extend .position-top-zero;
+      }
+      .hamb-bottom {
+        @extend .position-bottom-zero;
+      }
+    }
+    .hamb-top {
+      top: $fivePix;
+    }
+    .hamb-middle {
+      margin-top: -2px;
+      @extend .position-top-alf-screen;
+    }
+    .hamb-bottom {
+      bottom: $fivePix;
+    }
+  }
+  //if menu is open
+  &.is-open {
+    .hamb-top {
+      @include make-hamb-button-close('top');
+    }
+    .hamb-middle {
+      @extend .dp-none;
+    }
+    .hamb-bottom {
+      @include make-hamb-button-close('bottom');
+    }
+    &::before {
+      @extend .font-size-small;
+    }
+    &:hover {
+      &::before {
+        @extend .dp-block;
+        @extend .opacity-full;
+        @include transition-all-ease-in-out($halfSecond);
+        @include translate3d(-100px,$none,$none);
+      }
+    }
+  }
+}

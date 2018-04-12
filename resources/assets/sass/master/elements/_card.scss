@@ -1,0 +1,19 @@
+.card {
+  @extend .shadow;
+  @extend .border-zero;
+  &:after {
+    content: '';
+    height: $tooPix;
+    transition: $quarterSecond;
+    @extend .position-top-zero;
+    @extend .position-left-zero;
+    @extend .width-zero;
+    @extend .bg-apple-green;
+    @extend .position-absolute;
+  }
+  &:hover {
+    &::after {
+      @extend .width-100prc;
+    }
+  }
+}

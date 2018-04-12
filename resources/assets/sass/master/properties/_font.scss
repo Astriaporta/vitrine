@@ -1,0 +1,20 @@
+.header {
+  @each $num, $size in $header-size {
+    &-#{$num} {font-size: $size;}
+  }
+}
+.font {
+  &-size {
+    &-regular {font-size: $size-small;}
+    &-small {font-size: $size-small;}
+    &-x-small {font-size: $size-x-small;}
+  }
+  &-weight {
+    &-bold {
+      font-weight: bold;
+    }
+  }
+}
+.display-4 {
+ @extend .header-3;
+}

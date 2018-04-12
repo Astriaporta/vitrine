@@ -1,0 +1,16 @@
+.dp {
+  @each $i, $dd in $display {
+    &-#{$dd} {display: #{$dd}}
+  }
+}
+
+.flex {
+  &-column { flex-direction: column; }
+  &-row { flex-direction: row; }
+  &-nowrap { flex-wrap: nowrap; }
+}
+.justify-content {
+  @each $content, $value in $justify-content {
+    &-#{$content} {justify-content: #{$value}}
+  }
+}

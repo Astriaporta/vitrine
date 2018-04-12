@@ -1,0 +1,45 @@
+.accordion {
+  &-button {
+    padding: $size-small;
+    cursor: pointer;
+    @extend .outline-none;
+    @extend .width-100prc;
+    @extend .c-init;
+    @extend .text-left;
+    @extend .border-none;
+    transition: $halfSecond;
+  }
+  &-header {
+    @extend .bg-grey;
+    @extend .bg-ice;
+    &:hover {
+        @extend .bg-feldgrau;
+    }
+  }
+  &-header {
+    &.active {
+        @extend .bg-feldgrau;
+    }
+  }
+  &-button {
+    &:after {
+      content: $plus;
+      float: right;
+      margin-left: $fivePix;
+      @extend .c-feldgrau;
+      @extend .font-size-x-small;
+    }
+  }
+  &-body {
+    max-height: $none;
+    overflow: hidden;
+    transition: max-height $quarterSecond ease-out;
+  }
+}
+.active {
+  .accordion-button {
+    &:after {
+      content: $minus;
+    }
+  }
+}

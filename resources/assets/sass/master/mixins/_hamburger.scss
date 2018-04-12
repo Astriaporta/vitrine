@@ -1,0 +1,21 @@
+@mixin make-hamb-button-close($posHamp) {
+  margin-top: -2px;
+  @extend .position-top-alf-screen;
+  @if $posHamp == 'top' {
+    @include rotate($northEast);
+  }
+  @if $posHamp == 'bottom' {
+    @include rotate($northWest);
+  }
+  @include transition-transform-cubic-bezier($second, .73,1,.28,.08);
+}
+@mixin make-hamb-button($posHamp) {
+  height: 4px;
+  @extend .bg-ice;
+  @extend .width-100prc;
+  @extend .position-absolute;
+  @extend .position-left-zero;
+  @if $posHamp != 'middle' {
+    @include transition-all-ease-in-out($halfSecond);
+  }
+}

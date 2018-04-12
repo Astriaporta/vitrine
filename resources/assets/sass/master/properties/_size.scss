@@ -1,0 +1,10 @@
+.width {
+  &-x-large {width: $size-x-large;}
+  &-100prc {width: $fullScreen}
+  &-zero {width: $none}
+}
+.height {
+  &-x-large {height: $size-x-large;}
+  &-100prc {height: $fullScreen}
+  &-zero {height: $none}
+}

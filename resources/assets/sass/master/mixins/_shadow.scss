@@ -1,0 +1,5 @@
+@mixin my-box-shadow($offset-x, $offset-y, $blur-radius, $spread-radius, $cr, $cg, $cb, $cd) {
+  -webkit-box-shadow: $offset-x $offset-y $blur-radius $spread-radius rgba($cr, $cg, $cb, $cd);
+  -moz-box-shadow: $offset-x $offset-y $blur-radius $spread-radius rgba($cr, $cg, $cb, $cd);
+  box-shadow: $offset-x $offset-y $blur-radius $spread-radius rgba($cr, $cg, $cb, $cd);
+}

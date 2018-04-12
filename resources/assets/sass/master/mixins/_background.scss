@@ -1,0 +1,9 @@
+@mixin linear-gradient($deg, $r1, $g1, $b1, $a1, $r2, $g2, $b2, $a2) {
+  background: -webkit-linear-gradient($deg, rgba($r1, $g1, $b1, $a1), rgba($r2, $g2, $b2, $a2));
+  background: -o-linear-gradient($deg, rgba($r1, $g1, $b1, $a1), rgba($r2, $g2, $b2, $a2));
+  background: -moz-linear-gradient($deg, rgba($r1, $g1, $b1, $a1), rgba($r2, $g2, $b2, $a2));
+  background: linear-gradient($deg, rgba($r1, $g1, $b1, $a1), rgba($r2, $g2, $b2, $a2));
+  background: rgba($r1, $g1, $b1, $a1);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba($color, $opacity)',
+    endColorstr='rgba(#{$r2}, #{$g2}, #{$b2}, #{$a2})', GradientType=0 );
+}

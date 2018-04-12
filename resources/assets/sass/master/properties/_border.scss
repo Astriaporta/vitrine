@@ -1,0 +1,10 @@
+.outline {
+  &-none {outline: none;}
+}
+.border {
+  &-none {border: none;}
+  &-zero {border: $none;}
+  &-color {
+    @include colors(border-color);
+  }
+}

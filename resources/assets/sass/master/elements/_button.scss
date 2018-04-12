@@ -1,0 +1,32 @@
+.btn {
+  &.btn {
+    &-white {
+      @extend .c-charcoal;
+      @extend .bg-ice;
+    }
+    &-rised {
+      @extend .shadow-rised;
+    }
+    &-primary {
+      @extend .c-ice;
+      @extend .bg-bleue-de-france;
+      @extend .border-color-bleue-de-france;
+    }
+    &-success {
+      @extend .c-ice;
+      @extend .bg-apple-green;
+      @extend .border-color-apple-green;
+    }
+    &-border-none {
+      @extend .border-none;
+    }
+    &-transparent {
+      @extend .c-ice;
+      @extend .bg-transparent;
+      @extend .border-color-ice;
+    }
+  }
+  &.shadow-light {
+    @extend .shadow-light;
+  }
+}

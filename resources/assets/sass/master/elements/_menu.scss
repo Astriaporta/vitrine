@@ -1,0 +1,11 @@
+.menu {
+  &.fixed {
+    @extend .position-fixed;
+  }
+  &.bottom {
+    @extend .position-bottom-zero;
+  }
+  &.right {
+    @extend .position-right-zero;
+  }
+}

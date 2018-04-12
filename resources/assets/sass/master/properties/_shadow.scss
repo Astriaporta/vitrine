@@ -1,0 +1,12 @@
+.shadow {
+  box-shadow: $shadow;
+  &-rised {
+    @include my-box-shadow($none, $size-base, $size-very-x-large, $none, $none, $none, $none, $none);
+  }
+  &-text-light {
+    text-shadow: $shadow-light;
+  }
+  &-light {
+    box-shadow: $shadow-light;
+  }
+}

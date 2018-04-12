@@ -1,0 +1,5 @@
+@mixin colors($prop) {
+  @each $color, $value in $colors {
+    &-#{$color} {#{$prop}: $value;}
+  }
+}

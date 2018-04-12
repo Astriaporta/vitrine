@@ -1,0 +1,24 @@
+.social {
+  li {
+    line-height: $size-x-large;
+    @include transition-transform($halfSecond);
+    @include rotate($northEast);
+    @extend .dp-block;
+    @extend .text-center;
+    @extend .width-x-large;
+    @extend .height-x-large;
+    @extend .bg-ice;
+    @extend .shadow-light;
+    &:hover {
+      @include scale-rotate(1.3,1.3, $northEast);
+    }
+  }
+  a {
+    @extend .dp-block;
+    @extend .text-center;
+    @include rotate($northWest);
+    @extend .width-x-large;
+    @extend .height-x-large;
+    @extend .c-charcoal;
+  }
+}

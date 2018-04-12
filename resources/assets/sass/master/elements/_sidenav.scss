@@ -1,0 +1,42 @@
+.sidenav {
+  z-index: $one;
+  overflow-x: hidden;
+  padding-top: $size-x-large;
+  transition: $halfSecond;
+  @extend .height-100prc;
+  @extend .width-zero;
+  @extend .position-fixed;
+  @extend .position-top-zero;
+  @extend .position-left-zero;
+  @extend .bg-charcoal;
+  a {
+    padding: $size-very-x-small $size-very-x-small $size-very-x-small $size-large-small;
+    text-decoration: none;
+    transition: $quarterSecond;
+    @extend .dp-block;
+    @extend .c-ice;
+    @extend .header-3;
+  }
+  a:hover {
+      @extend .c-feldgrau;
+  }
+  .navbar {
+    justify-content: center;
+    @extend .flex-nowrap;
+    @extend .text-center;
+    > .nav {
+      @extend .flex-nowrap;
+      @extend .text-center;
+    }
+  }
+  &.is-closed {
+      @extend .width-zero;
+  }
+}
+
+#main {
+  transition: margin-left $halfSecond;
+  &.is-closed {
+    margin-left: $none;
+  }
+}

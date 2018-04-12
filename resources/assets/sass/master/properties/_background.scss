@@ -1,0 +1,20 @@
+.bg {
+  @include colors(background-color);
+}
+.backgroung-img {
+  position: relative;
+  background: {
+    image: url(/images/PIA08093-orig.jpg);/* source: https://images-assets.nasa.gov/image/PIA08093/PIA08093~orig.jpg */
+    position: center center;
+    repeat: no-repeat;
+    size: cover;
+  }
+  height: $fullScreen;
+  overflow: hidden;
+}
+.transparent {
+  @extend .c-ice;
+  @extend .bg-charcoal;
+  @include linear-gradient($south, 16, 25, 32, 0.38, 0, 0, 0, 0.5);
+}
+.bg-primary {@extend .bg-bleue-de-france;}

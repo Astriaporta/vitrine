@@ -1,0 +1,19 @@
+@mixin rotate($degres) {
+  -webkit-transform: rotate($degres);
+  -moz-transform: rotate($degres);
+  -ms-transform: rotate($degres);
+  -o-transform: rotate($degres);
+  transform: rotate($degres);
+}
+@mixin scale-rotate($sx,$sy, $degres) {
+  -webkit-transform: scale($sx,$sy) rotate($degres);
+    -moz-transform: scale($sx,$sy) rotate($degres);
+  -ms-transform: scale($sx,$sy) rotate($degres);
+    -o-transform: scale($sx,$sy) rotate($degres);
+  transform: scale($sx,$sy) rotate($degres);
+}
+@mixin translate3d ($sx, $sy, $sz) {
+  -webkit-transform: translate3d($sx, $sy, $sz);
+  -moz-transform: translate3d($sx, $sy, $sz);
+  transform: translate3d($sx, $sy, $sz);
+}

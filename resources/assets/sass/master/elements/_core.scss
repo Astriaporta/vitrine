@@ -1,0 +1,53 @@
+/*
+* Globals
+*/
+html {
+  font-family: $main-fonts;
+  @extend .bg-ice;
+}
+body {
+  @extend html;
+  font: {
+    size: $size-small;
+    weight: 400;
+  }
+}
+h1 {
+  @extend .shadow-text-light;
+}
+h2 {
+ @extend .header-2;
+ @extend .shadow-text-light;
+}
+.main-title {
+  font-size: 16vmin;
+  @extend .font-weight-bold;
+}
+.header {
+  &-title {
+    margin-bottom: $size-large-small;
+    @extend .header-2;
+    @extend .font-weight-bold;
+    @extend .text-left;
+  }
+  &-lead {
+    @extend .header-3;
+  }
+}
+p {
+  @extend .font-size-regular;
+}
+
+.pl-2-6 { padding-left: .65rem; }
+.pr-2-6 { padding-right: .65rem; }
+.px-2-6 {
+  @extend .pl-2-6;
+  @extend .pr-2-6;
+}
+/*
+* Captcha
+*/
+.captcha {
+  @extend .dp-flex;
+  @extend .flex-nowrap;
+}

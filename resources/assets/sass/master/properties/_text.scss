@@ -1,0 +1,5 @@
+.text {
+  @each $i, $align in $text-align {
+    &-#{$align} {text-align: #{$align};}
+  }
+}

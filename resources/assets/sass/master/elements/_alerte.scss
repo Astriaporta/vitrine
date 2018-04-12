@@ -1,0 +1,19 @@
+.message {
+  &-alert {
+    box-shadow: $shadow;
+    @extend .border-zero;
+  }
+}
+.has-error {
+  @extend .border-color-bittersweet;
+}
+.alert {
+  &.alert-danger {
+    @extend .bg-bittersweet;
+    @extend .message-alert;
+  }
+  &.alert-success {
+    @extend .bg-apple-green;
+    @extend .message-alert;
+  }
+}
