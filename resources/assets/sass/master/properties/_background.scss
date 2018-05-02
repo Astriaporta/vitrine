@@ -1,7 +1,8 @@
 .bg {
   @include colors(background-color);
 }
-.backgroung-img {
+.backgroung-img,
+.backgroung-bnr {
   position: relative;
   background: {
     image: url(/images/PIA08093-orig.jpg);/* source: https://images-assets.nasa.gov/image/PIA08093/PIA08093~orig.jpg */
@@ -9,8 +10,10 @@
     repeat: no-repeat;
     size: cover;
   }
-  height: $fullScreen;
   overflow: hidden;
+}
+.backgroung-img {
+  height: $fullScreen;
 }
 .transparent {
   @extend .c-ice;

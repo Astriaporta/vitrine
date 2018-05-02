@@ -13,9 +13,9 @@
     @include('layouts.header')
     <div id="main" class="d-flex flex-column h-100 is-closed">
       @if(!Request::is('/'))
-      <div role="main" class="d-flex flex-column">
+      <div role="main" class="">
         @include('layouts.baner')
-        <section class="pb-5 pt-5">
+        <section class="pb-5 pt-5s">
           <div class="container">
             <div class="row justify-content-center">
               @yield('content')

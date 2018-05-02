@@ -57,15 +57,19 @@ body,
   background-color: inherit;
 }
 
-.backgroung-img {
+.backgroung-img,
+.backgroung-bnr {
   position: relative;
   background-image: url(/images/PIA08093-orig.jpg);
   /* source: https://images-assets.nasa.gov/image/PIA08093/PIA08093~orig.jpg */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
   overflow: hidden;
+}
+
+.backgroung-img {
+  height: 100%;
 }
 
 .transparent {

@@ -1,4 +1,4 @@
-<section class="mt-0 mb-0 text-light backgroung-img">
+<section class="mt-0 mb-0 text-light backgroung-bnr">
   <div class="transparent">
     @include('layouts.menu.open')
     <div class="container">
