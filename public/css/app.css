@@ -396,7 +396,6 @@ h2 {
 }
 
 .width-x-large,
-.social li,
 .social a {
   width: 4rem;
 }
@@ -418,7 +417,6 @@ h2 {
 }
 
 .height-x-large,
-.social li,
 .social a {
   height: 4rem;
 }
@@ -641,7 +639,9 @@ body {
 }
 
 .social li {
-  line-height: 4rem;
+  line-height: 8vmin;
+  height: 8vmin;
+  width: 8vmin;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -692,6 +692,21 @@ body {
 
   #main.is-open {
     margin-left: 0;
+  }
+
+  .hamburger {
+    width: 8vmin;
+    height: 8vmin;
+  }
+
+  .hamb-top,
+  .hamb-middle,
+  .hamb-bottom {
+    height: .8vmin;
+  }
+
+  .social li a i {
+    vertical-align: 5.5vmin;
   }
 }
 

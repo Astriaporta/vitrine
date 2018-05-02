@@ -25,4 +25,22 @@
   #main.is-open {
     margin-left: 0;
   }
+  .hamburger {
+    width: 8vmin;
+    height: 8vmin;
+  }
+  .hamb-top,
+  .hamb-middle,
+  .hamb-bottom {
+    height: .8vmin;
+  }
+  .social {
+    li {
+      a {
+        i {
+          vertical-align: 5.5vmin;
+        }
+      }
+    }
+  }
 }

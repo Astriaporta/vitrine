@@ -1,12 +1,12 @@
 .social {
   li {
-    line-height: $size-x-large;
+    line-height: 8vmin;
+    height: 8vmin;
+    width: 8vmin;
     @include transition-transform($halfSecond);
     @include rotate($northEast);
     @extend .dp-block;
     @extend .text-center;
-    @extend .width-x-large;
-    @extend .height-x-large;
     @extend .bg-ice;
     @extend .shadow-light;
     &:hover {
