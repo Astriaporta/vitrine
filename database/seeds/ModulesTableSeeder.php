@@ -65,7 +65,7 @@ class ModulesTableSeeder extends Seeder
         'prefix' => 'register',
         'name' => 'S\'enregistrer',
         'resume' => null,
-        'activated' => false,
+        'activated' => true,
       ]);
       DB::table('modules')->insert([
         'position' => null,
@@ -79,7 +79,7 @@ class ModulesTableSeeder extends Seeder
         'prefix' => 'parameters',
         'name' => 'Paramètres',
         'resume' => null,
-        'activated' => false,
+        'activated' => true,
       ]);
     }
 }

@@ -20,7 +20,11 @@ h2 {
  @extend .shadow-text-light;
 }
 .main-title {
-  font-size: 16vmin;
+  font-size: 14vmin;
+  @extend .font-weight-bold;
+}
+.second-title {
+  font-size: 12vmin;
   @extend .font-weight-bold;
 }
 .header {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}" class="{{ (Request::is('/') ? 'h-100' : '') }}">
+<html lang="{{ app()->getLocale() }}" class="h-100">
   <head>
     <meta charset="utf-8">
     <meta name="csrf-token" content="{{ csrf_token() }}" id="csrfToken">
@@ -9,13 +9,13 @@
       integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
   </head>
-  <body class="{{ (Request::is('/') ? 'h-100' : '') }}">
+  <body class="h-100">
     @include('layouts.header')
-    <div id="main" class="h-100 is-closed">
+    <div id="main" class="d-flex flex-column h-100 is-closed">
       @if(!Request::is('/'))
-      <div role="main">
+      <div role="main" class="d-flex flex-column">
         @include('layouts.baner')
-        <section class="pb-5 pt-5 mb-5">
+        <section class="pb-5 pt-5">
           <div class="container">
             <div class="row justify-content-center">
               @yield('content')

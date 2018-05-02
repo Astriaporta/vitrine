@@ -305,6 +305,7 @@ p {
 
 .font-weight-bold,
 .main-title,
+.second-title,
 .header-title {
   font-weight: bold;
 }
@@ -377,8 +378,8 @@ p {
 
 .shadow-rised,
 .btn.btn-rised {
-  -webkit-box-shadow: 0 1.5rem 5rem 0 transparent;
-  box-shadow: 0 1.5rem 5rem 0 transparent;
+  -webkit-box-shadow: 0 1.5rem 5rem 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 1.5rem 5rem 0 rgba(0, 0, 0, 0);
 }
 
 .shadow-text-light,
@@ -507,7 +508,11 @@ body {
 }
 
 .main-title {
-  font-size: 16vmin;
+  font-size: 14vmin;
+}
+
+.second-title {
+  font-size: 12vmin;
 }
 
 .header-title {
