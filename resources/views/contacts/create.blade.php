@@ -18,7 +18,7 @@
 </div>
 @endif
 
-<div class="col-sm-9">
+<div class="col-sm-{{($infosContact->activated ? 9 : 12)}}">
   <h4 class="text-center">{{ ucfirst(trans('validation.attributes.contact')) }}</h4>
     @include('layouts.messages.errors')
     @include('layouts.messages.success')

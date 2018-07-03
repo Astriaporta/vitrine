@@ -32,11 +32,18 @@
   &.is-closed {
       @extend .width-zero;
   }
+  &.is-open {
+      width: 23%;
+      text-align: center;
+  }
 }
 
 #main {
   transition: margin-left $halfSecond;
   &.is-closed {
     margin-left: $none;
+  }
+  &.is-open {
+    margin-left: 23%;
   }
 }

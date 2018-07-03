@@ -19,12 +19,9 @@ h2 {
  @extend .header-2;
  @extend .shadow-text-light;
 }
-.main-title {
-  font-size: 14vmin;
-  @extend .font-weight-bold;
-}
+.main-title,
 .second-title {
-  font-size: 9vmin;
+  font-size: 7rem;
   @extend .font-weight-bold;
 }
 .header {
@@ -54,4 +51,8 @@ p {
 .captcha {
   @extend .dp-flex;
   @extend .flex-nowrap;
+}
+.connection {
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%;
 }

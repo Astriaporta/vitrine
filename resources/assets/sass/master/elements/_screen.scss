@@ -3,23 +3,42 @@
     font-size: calc($regular-text + 0.66667vw);
   }
 }
-@media only screen and (min-width: 701px) {
-  .sidenav.is-open {
-      width: 23%;
-      text-align: center;
+/*@media only screen and (min-width: 768px) or (max-height: 768px) {*/
+@media only screen and (max-width: 1024px), (max-height: 768px) {
+  h4 {
+    font-size: 4rem;
   }
-  #main.is-open {
-    margin-left: 23%;
+  .form-control,
+  .btn {
+    font-size: 2.5rem;
   }
-}
-@media only screen and (max-width: 700px) {
+  .captcha {
+    width: 100%;
+    #captchaView {
+      flex-grow: 3;
+      img {
+        width: 100%;
+      }
+    }
+    #captchaRefresh {
+      flex-grow: 1;
+      i {
+        font-size: 2.5rem;
+      }
+    }
+  }
   .hamburger {
     position: fixed;
   }
   .sidenav {
     padding-top: $size-small;
     &.is-open {
-      width: 100%;
+      width: $fullScreen;
+    }
+    .navbar {
+      .nav {
+        a { font-size: 4em;}
+      }
     }
   }
   #main.is-open {
@@ -34,13 +53,47 @@
   .hamb-bottom {
     height: .8vmin;
   }
-  .social {
-    li {
-      a {
-        i {
-          vertical-align: 5.5vmin;
+  .backgroung-img {
+    .social {
+      li {
+        line-height: 6rem;
+        height: 6rem;
+        width: 6rem;
+        a {
+          font-size: 2.5rem;
+          padding-top: $size-large-small;
+          i {
+            vertical-align: 5.5vmin;
+          }
         }
       }
     }
+    .btn-lg {
+      padding: 1rem 2rem;
+      font-size: 3rem;
+    }
+  }
+  .backgroung-bnr {
+    .social {
+      li {
+        line-height: 6rem;
+        height: 6rem;
+        width: 6rem;
+        a {
+          font-size: $size-large-small;
+          padding-top: 2.3rem;
+          i {
+            vertical-align: 5.5vmin;
+          }
+        }
+      }
+    }
+  }
+  p {font-size: 2rem}
+  .header-lead {font-size: 3rem}
+  .header-title {font-size: 4rem}
+  .connection {
+    flex: 0 0 100%;
+    max-width: 100%
   }
 }

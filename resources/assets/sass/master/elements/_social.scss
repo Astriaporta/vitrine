@@ -1,8 +1,8 @@
 .social {
   li {
-    line-height: 8vmin;
-    height: 8vmin;
-    width: 8vmin;
+    line-height: $size-x-large;
+    height: $size-x-large;
+    width: $size-x-large;
     @include transition-transform($halfSecond);
     @include rotate($northEast);
     @extend .dp-block;
@@ -14,6 +14,7 @@
     }
   }
   a {
+    font-size: $size-base;
     @extend .dp-block;
     @extend .text-center;
     @include rotate($northWest);

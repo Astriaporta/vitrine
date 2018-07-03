@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="col-sm-5">
+<div class="connection">
   <h4 class="text-center">{{ ucfirst(trans('validation.attributes.signin')) }}</h4>
     @include('layouts.messages.errors')
   <div class="card">

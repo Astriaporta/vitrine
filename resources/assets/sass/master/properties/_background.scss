@@ -16,6 +16,7 @@
   height: $fullScreen;
 }
 .transparent {
+  height: $fullScreen;
   @extend .c-ice;
   @extend .bg-charcoal;
   @include linear-gradient($south, 16, 25, 32, 0.38, 0, 0, 0, 0.5);
