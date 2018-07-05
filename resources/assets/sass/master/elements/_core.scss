@@ -19,9 +19,12 @@ h2 {
  @extend .header-2;
  @extend .shadow-text-light;
 }
-.main-title,
-.second-title {
+.main-title {
   font-size: 7rem;
+  @extend .font-weight-bold;
+}
+.second-title {
+  font-size: $size-very-x-large;
   @extend .font-weight-bold;
 }
 .header {
@@ -32,7 +35,8 @@ h2 {
     @extend .text-left;
   }
   &-lead {
-    @extend .header-3;
+    font-size: $size-base-small;
+    /*@extend .header-3;*/
   }
 }
 p {
@@ -55,4 +59,8 @@ p {
 .connection {
   flex: 0 0 41.666667%;
   max-width: 41.666667%;
+}
+.take-contact {
+  flex: 0 0 75%;
+  max-width: 75%;
 }

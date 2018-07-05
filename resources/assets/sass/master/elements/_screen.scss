@@ -1,12 +1,14 @@
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px), (min-width: 768px) {
   .display-4 {
     font-size: calc($regular-text + 0.66667vw);
   }
 }
-/*@media only screen and (min-width: 768px) or (max-height: 768px) {*/
-@media only screen and (max-width: 1024px), (max-height: 768px) {
+@media screen and (max-width: 768px) {
   h4 {
     font-size: 4rem;
+  }
+  .container {
+    max-width: none;
   }
   .form-control,
   .btn {
@@ -37,7 +39,7 @@
     }
     .navbar {
       .nav {
-        a { font-size: 4em;}
+        a { font-size: 4rem;}
       }
     }
   }
@@ -61,10 +63,7 @@
         width: 6rem;
         a {
           font-size: 2.5rem;
-          padding-top: $size-large-small;
-          i {
-            vertical-align: 5.5vmin;
-          }
+          padding-top: $size-very-x-small;
         }
       }
     }
@@ -76,24 +75,25 @@
   .backgroung-bnr {
     .social {
       li {
-        line-height: 6rem;
-        height: 6rem;
-        width: 6rem;
+        line-height: 4rem;
+        height: 4rem;
+        width: 4rem;
         a {
           font-size: $size-large-small;
-          padding-top: 2.3rem;
-          i {
-            vertical-align: 5.5vmin;
-          }
         }
       }
     }
   }
-  p {font-size: 2rem}
-  .header-lead {font-size: 3rem}
-  .header-title {font-size: 4rem}
-  .connection {
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  p {font-size: 1.5rem}
+  .header-lead {font-size: 2rem}
+  .header-title {font-size: 3rem}
+  .connection,
+  .take-contact {
     flex: 0 0 100%;
-    max-width: 100%
+    max-width: 100%;
   }
 }
